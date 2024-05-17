@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+
+  header {
+    background: linear-gradient(to bottom right, #c9e7f2, #62bada);
+
+    .hero_section {
+      max-width: 1200px;
+      margin: 0 auto;
+      nav {
+        padding-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        .nav_logo {
+          img {
+            width: 100px;
+            height: 15px;
+          }
+        }
+        ul {
+          display: flex;
+          list-style: none;
+          gap: 30px;
+          li {
+            a {
+              text-decoration: none;
+              color: #000000;
+            }
+          }
+        }
+        .call_to_action {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 30px;
+          a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 14px;
+          }
+          .register_button {
+            background-color: #4f46ba;
+            color: #ffffff;
+            padding: 10px 30px;
+            transition: transform 0.3s ease;
+            &:hover {
+              background-color: #6f47ba;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 509px;
+        height: 966px;
+      }
+      h2 {
+        font-size: 60px;
+        font-weight: extrabold;
+      }
+      h4 {
+        font-size: 20;
+        font-weight: medium;
+        color: #64607d;
+      }
+      .linked-buttons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .play-button {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #22d497;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: background-color 0.3s ease;
+          .play-icon {
+            color: white;
+            font-size: 24px;
+          }
+        }
+        .get-started {
+          padding: 15px 35px;
+          background-color: #3734a9;
+          color: #ffffff;
+          border-radius: 47px;
+          border: none;
+        }
+      }
+    }
+  }
+}
